@@ -1,5 +1,6 @@
-# Resume Website of Benjamin Kats
-[BenKats.com](http://benkats.com)
+# Resume Website of Benjamin Kats (me)
 
-It is still underconstruction :grimacing:
+## [BenKats.com](http://benkats.com)
+
+ It's still underconstruction :grimacing:
 
