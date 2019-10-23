@@ -7,9 +7,21 @@ function App() {
         <div className='App'>
             <header className='App-header'>
                 <img src={logo} className='App-logo' alt='logo' />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
+                <h1> <span role="img" aria-label="Construction Worker Emoji">&#128119;
+</span>  This website is still a work in progress <span role="img" aria-label="Construction Crane Emoji">&#127959;</span></h1>
+                <p>But you're here, consider following me on my social medias :)</p>
+
+                <div>
+                    <ul>
+                        <li>
+                            <a href='https://linkedin.com/in/benkats'>LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href='https://www.instagram.com/ben_kats/'>Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <a
                     className='App-link'
                     href='https://reactjs.org'
