@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
 // import logo from './logo.svg';
 import './App.css';
 
-function App() {
-    return (
-        <div className='App'>
-            <h1>Welcome One and All</h1>
-        </div>
-    );
+import styled from 'styled-components';
+
+class App extends Component {
+    render() {
+        return (
+            <div className='App'>
+                <h1>Welcome One and All</h1>
+            </div>
+        );
+    }
 }
 
 export default App;
