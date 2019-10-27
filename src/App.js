@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
-// import logo from './logo.svg';
 import './App.css';
-
-import styled from 'styled-components';
 
 class App extends Component {
     render() {
         return (
             <div className='App'>
-                <h1>Welcome One and All</h1>
+                <h1>Benjamin Kats</h1>
+                <h3>Software Engineer</h3>
             </div>
         );
     }
