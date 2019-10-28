@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { HashRouter, Route } from 'react-router-dom';
 // import { HashLink as Link } from 'react-router-hash-link';
 import { Element } from 'react-scroll';
-
+import { Jumbotron, Button } from 'reactstrap';
 import './App.css';
 import About from './About';
 import Contact from './Contact';
@@ -13,6 +13,15 @@ class App extends Component {
         return (
             <div className='App'>
                 <Menu></Menu>
+                <Jumbotron fluid>
+                    <h1 className='display-1 text-center'>Benjamin Kats</h1>
+                    <p className='lead text-center'>Software Engineer</p>
+                    <hr className='my-2' />
+                    <p>Could have some text here, not sure what it would be though</p>
+                    <p className='d-flex justify-content-center'>
+                        <Button color='info'>Scroll Down</Button>
+                    </p>
+                </Jumbotron>
                 <h1>-------------------------</h1>
                 <h1>-------------------------</h1>
                 <h1>-------------------------</h1>
@@ -63,7 +72,6 @@ class App extends Component {
                 <h1>-------------------------</h1>
                 <h1>-------------------------</h1>
                 <h1>-------------------------</h1>
-
                 <Footer name='footer'></Footer>
             </div>
         );
