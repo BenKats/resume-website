@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { HashRouter, Route } from 'react-router-dom';
 // import { HashLink as Link } from 'react-router-hash-link';
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import { Jumbotron, Button } from 'reactstrap';
 import './App.css';
 import About from './About';
@@ -19,7 +19,15 @@ class App extends Component {
                     <hr className='my-2' />
                     <p>Could have some text here, not sure what it would be though</p>
                     <p className='d-flex justify-content-center'>
-                        <Button color='info'>Scroll Down</Button>
+                        <Link
+                            activeClass='active'
+                            to='about'
+                            spy={true}
+                            smooth={true}
+                            duration={300}
+                            offset={-55}>
+                            <Button color='info'>Scroll Down</Button>
+                        </Link>
                     </p>
                 </Jumbotron>
                 <h1>-------------------------</h1>
