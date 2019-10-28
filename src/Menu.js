@@ -16,6 +16,8 @@ import {
 
 // import { HashRouter, NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
+
+import resume from './static/Resume_Placeholder.pdf';
 const Menu = props => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -60,13 +62,16 @@ const Menu = props => {
                             <Button>Footer</Button>
                         </Link>
                     </NavItem>
+                    <NavItem></NavItem>
 
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
                             Resume
                         </DropdownToggle>
                         <DropdownMenu right>
-                            <DropdownItem>Plain Text</DropdownItem>
+                            <DropdownItem target='_blank' href={resume}>
+                                Plain Text
+                            </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem>Design</DropdownItem>
                         </DropdownMenu>
