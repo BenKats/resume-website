@@ -14,7 +14,7 @@ import {
     DropdownItem
 } from 'reactstrap';
 import styled from 'styled-components';
-import resume from './static/Resume_Placeholder.pdf';
+import resume from './static/Benjamin_Kats_Resume2019October.pdf';
 
 function Menu(props) {
     const [isOpen, setIsOpen] = useState(false);
