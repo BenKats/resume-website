@@ -27,8 +27,6 @@ function About(props) {
                     </Col>
                 </Row>
             </Container>
-            {/* <img src={profile}></img> */}
-            {/* <img src={(require = 'https://imgur.com/v2811dh')}></img> */}
         </div>
     );
 }

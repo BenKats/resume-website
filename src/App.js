@@ -11,12 +11,12 @@ import Menu from './Menu';
 
 import styled from 'styled-components';
 
-const Button2 = styled(Button)`
-    background-color: red !important;
-    &:hover {
-        color: blue;
-    }
-`;
+// const Button2 = styled(Button)`
+//     background-color: red !important;
+//     &:hover {
+//         color: blue;
+//     }
+// `;
 
 const Div = styled.div`
     scroll-behavior: smooth;
@@ -39,7 +39,7 @@ class App extends Component {
                             smooth={true}
                             duration={300}
                             offset={-55}>
-                            <Button2 color='info'>Scroll Down</Button2>
+                            <Button color='info'>Scroll Down</Button>
                         </Link>
                     </p>
                 </Jumbotron>
