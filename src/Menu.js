@@ -13,56 +13,37 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import styled from 'styled-components';
+import resume from './static/Benjamin_Kats_Resume2019October.pdf';
 
-// import { HashRouter, NavLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
-
-import resume from './static/Resume_Placeholder.pdf';
-const Menu = props => {
+function Menu(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar className='navbar sticky-top' color='light' light expand='md'>
+        <Navbar className='navbar fixed-top' color='light' light expand='md'>
             <NavbarBrand href='/'>Benjamin Kats</NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className='ml-auto' navbar>
                     <NavItem>
-                        <Link
-                            activeClass='active'
-                            to='contact'
-                            spy={true}
-                            smooth={true}
-                            duration={300}
-                            offset={-55}>
-                            <Button>Contact</Button>
-                        </Link>
+                        <NavLink href='#about'>
+                            <Button size='md'>About</Button>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <Link
-                            activeClass='active'
-                            to='about'
-                            spy={true}
-                            smooth={true}
-                            duration={300}
-                            offset={-55}>
-                            <Button>About</Button>
-                        </Link>
+                        <NavLink href='#contact'>Contact</NavLink>
                     </NavItem>
                     <NavItem>
-                        <Link
-                            activeClass='active'
-                            to='footer'
-                            spy={true}
-                            smooth={true}
-                            duration={300}
-                            offset={-55}>
-                            <Button>Footer</Button>
-                        </Link>
+                        <NavLink href='#footer'>Footer anchor</NavLink>
                     </NavItem>
-                    <NavItem></NavItem>
+
+                    <NavItem>
+                        <NavLink href='#footer'>
+                            <Button size='md'>Footer</Button>
+                        </NavLink>
+                    </NavItem>
 
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
@@ -80,6 +61,6 @@ const Menu = props => {
             </Collapse>
         </Navbar>
     );
-};
+}
 
 export default Menu;

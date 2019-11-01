@@ -1,8 +1,9 @@
 import React from 'react';
+import { Form, Button } from 'react-bootstrap';
 
-function Contact() {
+function Contact(props) {
     return (
-        <div>
+        <div className='d-flex-column ' id={props.id}>
             <h1>I Am The Contact</h1>
         </div>
     );

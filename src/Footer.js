@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
     return (
-        <div>
+        <div id={props.id}>
             <h1>I Am The Footer</h1>
         </div>
     );
