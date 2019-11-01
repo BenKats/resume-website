@@ -26,7 +26,7 @@ class App extends Component {
         return (
             <Div className='App'>
                 <Menu></Menu>
-                <Jumbotron style={{ height: '100vh' }} fluid>
+                <Jumbotron style={{ height: '85vh' }} fluid>
                     <h1 className='display-1 text-center'>Benjamin Kats</h1>
                     <p className='lead text-center'>Software Engineer</p>
                     <hr className='my-2' />
