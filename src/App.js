@@ -8,7 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import Menu from './Menu';
-
+import Popup from './Popup';
 import styled from 'styled-components';
 
 // const Button2 = styled(Button)`
@@ -25,6 +25,7 @@ class App extends Component {
     render() {
         return (
             <Div className='App'>
+                <Popup></Popup>
                 <Menu></Menu>
                 <Jumbotron style={{ height: '85vh' }} fluid>
                     <h1 className='display-1 text-center'>Benjamin Kats</h1>
